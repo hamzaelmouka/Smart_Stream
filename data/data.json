@@ -1,0 +1,194 @@
+[
+  {
+    "id": "1",
+    "channelNumber": "1057",
+    "name": "FR - DISCOVERY ID FHD",
+    "category": "DOCUMENTAIRE",
+    "logo": "https://placehold.co/60x60?text=Discovery",
+    "previewImage": "https://placehold.co/800x450?text=Discovery+Show",
+    "streamUrl": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "isLive": true,
+    "epg": {
+      "currentProgram": "Habitations en péril",
+      "startTime": "20:50",
+      "endTime": "21:45",
+      "progressPercentage": 65
+    }
+  },
+  {
+    "id": "2",
+    "channelNumber": "1058",
+    "name": "FR - TLC FHD",
+    "category": "DOCUMENTAIRE",
+    "logo": "https://placehold.co/60x60?text=TLC",
+    "previewImage": "https://placehold.co/800x450?text=TLC+Show",
+    "streamUrl": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "isLive": true,
+    "epg": {
+      "currentProgram": "La maison de mes rêves",
+      "startTime": "20:30",
+      "endTime": "21:20",
+      "progressPercentage": 40
+    }
+  },
+  {
+    "id": "3",
+    "channelNumber": "1067",
+    "name": "FR - RMC DECOUVERTE FHD",
+    "category": "DOCUMENTAIRE",
+    "logo": "https://placehold.co/60x60?text=RMC",
+    "previewImage": "https://placehold.co/800x450?text=RMC+Show",
+    "streamUrl": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "isLive": true,
+    "epg": {
+      "currentProgram": "Hors de contrôle : Les megastructures",
+      "startTime": "21:05",
+      "endTime": "22:00",
+      "progressPercentage": 20
+    }
+  },
+  {
+    "id": "4",
+    "channelNumber": "1070",
+    "name": "FR - NATIONAL GEOGRAPHIC FHD",
+    "category": "DOCUMENTAIRE",
+    "logo": "https://placehold.co/60x60?text=NatGeo",
+    "previewImage": "https://placehold.co/800x450?text=NatGeo+Show",
+    "streamUrl": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "isLive": true,
+    "epg": {
+      "currentProgram": "Planète sauvage",
+      "startTime": "20:40",
+      "endTime": "21:40",
+      "progressPercentage": 55
+    }
+  },
+  {
+    "id": "5",
+    "channelNumber": "2001",
+    "name": "FR - TF1 HD",
+    "category": "GENERALISTE",
+    "logo": "https://placehold.co/60x60?text=TF1",
+    "previewImage": "https://placehold.co/800x450?text=TF1+Show",
+    "streamUrl": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "isLive": true,
+    "epg": {
+      "currentProgram": "Le journal de 20h",
+      "startTime": "20:00",
+      "endTime": "21:00",
+      "progressPercentage": 90
+    }
+  },
+  {
+    "id": "6",
+    "channelNumber": "2002",
+    "name": "FR - FRANCE 2 HD",
+    "category": "GENERALISTE",
+    "logo": "https://placehold.co/60x60?text=France2",
+    "previewImage": "https://placehold.co/800x450?text=France+2+Show",
+    "streamUrl": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "isLive": true,
+    "epg": {
+      "currentProgram": "Envoyé spécial",
+      "startTime": "21:00",
+      "endTime": "22:30",
+      "progressPercentage": 15
+    }
+  },
+  {
+    "id": "7",
+    "channelNumber": "2003",
+    "name": "FR - M6 HD",
+    "category": "GENERALISTE",
+    "logo": "https://placehold.co/60x60?text=M6",
+    "previewImage": "https://placehold.co/800x450?text=M6+Show",
+    "streamUrl": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "isLive": true,
+    "epg": {
+      "currentProgram": "Capital",
+      "startTime": "21:10",
+      "endTime": "23:00",
+      "progressPercentage": 10
+    }
+  },
+  {
+    "id": "8",
+    "channelNumber": "3001",
+    "name": "FR - BEIN SPORTS 1 FHD",
+    "category": "SPORT",
+    "logo": "https://placehold.co/60x60?text=beIN1",
+    "previewImage": "https://placehold.co/800x450?text=beIN+Sports+1",
+    "streamUrl": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "isLive": true,
+    "epg": {
+      "currentProgram": "Ligue 1 : Match en direct",
+      "startTime": "20:45",
+      "endTime": "22:45",
+      "progressPercentage": 50
+    }
+  },
+  {
+    "id": "9",
+    "channelNumber": "3002",
+    "name": "FR - EUROSPORT 1 FHD",
+    "category": "SPORT",
+    "logo": "https://placehold.co/60x60?text=Eurosport",
+    "previewImage": "https://placehold.co/800x450?text=Eurosport+Show",
+    "streamUrl": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "isLive": true,
+    "epg": {
+      "currentProgram": "Tennis : Masters en direct",
+      "startTime": "19:30",
+      "endTime": "22:00",
+      "progressPercentage": 75
+    }
+  },
+  {
+    "id": "10",
+    "channelNumber": "4001",
+    "name": "FR - CANAL+ CINEMA FHD",
+    "category": "CINEMA",
+    "logo": "https://placehold.co/60x60?text=Canal%2B",
+    "previewImage": "https://placehold.co/800x450?text=Canal%2B+Cinema",
+    "streamUrl": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "isLive": true,
+    "epg": {
+      "currentProgram": "Film : Les évadés",
+      "startTime": "20:50",
+      "endTime": "23:10",
+      "progressPercentage": 30
+    }
+  },
+  {
+    "id": "11",
+    "channelNumber": "4002",
+    "name": "FR - OCS MAX FHD",
+    "category": "CINEMA",
+    "logo": "https://placehold.co/60x60?text=OCS",
+    "previewImage": "https://placehold.co/800x450?text=OCS+Max",
+    "streamUrl": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "isLive": true,
+    "epg": {
+      "currentProgram": "Film : Inception",
+      "startTime": "21:00",
+      "endTime": "23:30",
+      "progressPercentage": 25
+    }
+  },
+  {
+    "id": "12",
+    "channelNumber": "5001",
+    "name": "FR - GULLI FHD",
+    "category": "ENFANTS",
+    "logo": "https://placehold.co/60x60?text=Gulli",
+    "previewImage": "https://placehold.co/800x450?text=Gulli+Show",
+    "streamUrl": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "isLive": true,
+    "epg": {
+      "currentProgram": "Dessins animés du soir",
+      "startTime": "20:15",
+      "endTime": "21:15",
+      "progressPercentage": 80
+    }
+  }
+]
