@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Stream</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="bg-stone-900 h-screen overflow-hidden">
+    <main class="grid grid-cols-3 h-full gap-3 p-3">
+        <section class="col-span-1 bg-slate-700 rounded-xl flex flex-col min-h-0">
+            <div class="flex justify-center text-2xl font-bold italic m-4 text-gray-500  ">Smart Stream</div>
+             <input id="search" class="m-2 h-10 px-2 bg-amber-50 w-[96%] rounded-md " type="text" placeholder="Recherch TV en direct">
+             <p id="loading" class=" m-2 text-amber-50 animate-pulse ">chargement...</p>
+             <p id="erour" class=" m-2 p-3 rounded-md bg-red-600 text-white"></p>
+                <select name="" id="select" class=" m-2   bg-amber-50 border h-10 border-amber-950 rounded-md"></select>
+             <div id="channel" class="flex-1 overflow-y-auto "></div>
+                <!-- <div class=" flex m-2 bg-amber-50 rounded-md p-2 ">
+                <p class="font-bold text-zinc-800 flex items-center m-3 ">1</p>
+                   <div class="w-12 h-11 font-sans rounded-md text-sm text-amber-50 flex justify-center items-center bg-amber-900 ">
+                   beIN1
+                </div>
+                <p class="ml-5 flex items-center italic font-bold text-2xl text-gray-800 ">beIN Sports 1</p> -->
+            <!-- <div class=" flex m-2 bg-amber-50 rounded-md p-2 ">
+                <p class="font-bold text-zinc-800 flex items-center m-3 ">1</p>
+                <div class="w-12 h-11 font-sans rounded-md text-sm text-amber-50 flex justify-center items-center bg-green-900 ">
+                   ARR
+                </div>
+                <p class="ml-5 flex items-center italic font-bold text-2xl text-gray-800 ">Arryadia</p>
+            </div> -->
+        </section>
+        <section class="col-span-2 min-w-0 min-h-0">
+            <div id="img" class="w-full h-full p-5">
+                <div id="image" class="">
+                <img class="w-full h-130 object-cover rounded-2xl " src="https://wallpapercave.com/wp/wp2827789.jpg">
+                <h1 class="mt-4 text-3xl font-bold text-amber-50">1057-FR - DISCOVERY ID FHD</h1>
+                </div>
+            </div>
+        </section>
+    </main>
+<script type="module" src="./js/main.js" defer ></script>
+</body>
+</html>

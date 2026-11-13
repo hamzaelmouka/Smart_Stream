@@ -1,0 +1,72 @@
+import { getData } from "../services/api.js";
+import { affichage } from "../ui/afichage.js";
+import { affichagePrevi ,selection ,selectionn,selectio } from "../ui/afichage.js";
+import { selecte } from "../ui/afichage.js";
+import { loading } from "../ui/afichage.js";
+import { errour } from "../ui/afichage.js";
+
+const list= document.getElementById("channel");
+const search=document.getElementById("search");
+const select=document.getElementById("select");
+ 
+     
+
+
+let channels=[];
+
+async function demarage() {
+    loading(false);
+    errour(true);
+    try{
+        channels=await getData();
+        affichage(channels);
+        selecte(channels);
+        selection();
+    }catch(error){
+        errour(false,error.message)
+    }finally{
+        loading(true)
+    }
+}
+demarage();
+
+
+
+
+
+
+select.addEventListener("change", () => {
+    let result=channels;
+    if(select.value!==""){
+       result=channels.filter((p)=>p.category===select.value);
+    }
+    search.value="";
+    affichage(result);
+});
+// affichage(channels);
+list.addEventListener("click",(e)=>{
+const cart=e.target.closest("[data-id]")
+if(!cart) return ;
+
+const carts=document.querySelectorAll("[data-id]");
+carts.forEach((c)=>selectio(c));
+selectionn(cart);
+const element=channels.find(({id})=> id===cart.dataset.id)
+affichagePrevi(element)
+
+})
+
+
+search.addEventListener("input",()=>{
+    const put=search.value.trim().toLowerCase();
+    const carts=document.querySelectorAll("[data-id]");
+
+    carts.forEach((cart)=>{
+        const namee=cart.querySelector(".namee");
+        const text=namee.textContent.toLowerCase();
+        // const elemen=channels.find((p)=>p.id===cart.dataset.id);
+        // const name=elemen.name.toLowerCase();
+        cart.classList.toggle("hidden",!text.includes(put));
+    })
+})
+
