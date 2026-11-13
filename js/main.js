@@ -1,17 +1,38 @@
 import { getData } from "../services/api.js";
 import { affichage } from "../ui/afichage.js";
-import { affichagePrevi } from "../ui/afichage.js";
+import { affichagePrevi ,selection ,selectionn,selectio } from "../ui/afichage.js";
 import { selecte } from "../ui/afichage.js";
-
+import { loading } from "../ui/afichage.js";
+import { errour } from "../ui/afichage.js";
 
 const list= document.getElementById("channel");
 const search=document.getElementById("search");
 const select=document.getElementById("select");
+ 
+     
 
 
-const channels=await getData();
-console.log(channels);
-selecte(channels);
+let channels=[];
+
+async function demarage() {
+    loading(false);
+    errour(true);
+    try{
+        channels=await getData();
+        affichage(channels);
+        selecte(channels);
+        selection();
+    }catch(error){
+        errour(false,error.message)
+    }finally{
+        loading(true)
+    }
+}
+demarage();
+
+
+
+
 
 
 select.addEventListener("change", () => {
@@ -22,10 +43,14 @@ select.addEventListener("change", () => {
     search.value="";
     affichage(result);
 });
-affichage(channels);
+// affichage(channels);
 list.addEventListener("click",(e)=>{
 const cart=e.target.closest("[data-id]")
 if(!cart) return ;
+
+const carts=document.querySelectorAll("[data-id]");
+carts.forEach((c)=>selectio(c));
+selectionn(cart);
 const element=channels.find(({id})=> id===cart.dataset.id)
 affichagePrevi(element)
 
