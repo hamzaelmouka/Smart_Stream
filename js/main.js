@@ -1,16 +1,28 @@
 import { getData } from "../services/api.js";
 import { affichage } from "../ui/afichage.js";
 import { affichagePrevi } from "../ui/afichage.js";
+import { selecte } from "../ui/afichage.js";
 
 
 const list= document.getElementById("channel");
 const search=document.getElementById("search");
+const select=document.getElementById("select");
 
 
 const channels=await getData();
 console.log(channels);
-affichage(channels);
+selecte(channels);
 
+
+select.addEventListener("change", () => {
+    let result=channels;
+    if(select.value!==""){
+       result=channels.filter((p)=>p.category===select.value);
+    }
+    search.value="";
+    affichage(result);
+});
+affichage(channels);
 list.addEventListener("click",(e)=>{
 const cart=e.target.closest("[data-id]")
 if(!cart) return ;
@@ -32,3 +44,4 @@ search.addEventListener("input",()=>{
         cart.classList.toggle("hidden",!text.includes(put));
     })
 })
+
